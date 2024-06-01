@@ -29,13 +29,13 @@ class Sudoku_Helper:
         neighbours = np.zeros((9), dtype= bool)
         #check column
         for i in range(9):
-            if(i != col-1):
-                current = sudoku.entries[row-1][i]
+            if(i != col):
+                current = sudoku.entries[row][i]
                 if(current != 0):
                     neighbours[current -1] = True
         for i in range(9):
-            if(i != row-1):
-                current = sudoku.entries[i][col-1]
+            if(i != row):
+                current = sudoku.entries[i][col]
                 if(current != 0):
                     neighbours[current -1] = True
         return neighbours
