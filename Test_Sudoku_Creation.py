@@ -1,3 +1,3 @@
-import Sudoku as Sudoku
+from Sudoku import Sudoku
 
 test_sudoku = Sudoku()
